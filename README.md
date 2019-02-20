@@ -1,3 +1,4 @@
-# My Awesome Book
+# Python-based network crawler
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+学习初衷：大数据时代，高效的收集数据、提取数据，使数据转化为价值信息是每个人至关重要的技能。
+
