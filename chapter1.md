@@ -35,9 +35,5 @@ scrapy genspider [爬虫名字][目标网页的域名]
 >
 > get            获取Selector中的第一个文本，返回的是一个string类型
 
-3.数据传回来需要交给pipline处理，可以使用yield或者return列表。
-
-
-
-
+3.数据传回来需要交给pipline处理，可以使用yield或者return列表（收集了所有item的列表）。
 
