@@ -16,6 +16,22 @@ scrapy startproject [项目名称]
 scrapy genspider [爬虫名字][目标网页的域名]
 ```
 
+* 启动爬虫
+
+命令行输入:
+
+```
+scrapy crawl [爬虫名称]
+```
+
+或者在pycharm中新建.py文件：
+
+```py
+from scrapy import cmdline
+
+cmdline.execute("scrapy crawl csbk_spider".split())
+```
+
 ### 项目目录结构
 
 1. items.py:用来存放爬虫爬取下来的数据模型。
