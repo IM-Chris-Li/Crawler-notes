@@ -37,3 +37,25 @@ scrapy genspider [爬虫名字][目标网页的域名]
 
 3.数据传回来需要交给pipline处理，可以使用yield或者return列表（收集了所有item的列表）。
 
+4.item：建议在'item.py'中定义好模型,以后就不使用字典。
+
+```py
+class CsbkItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    author = scrapy.Field()
+    content = scrapy.Field()
+```
+
+5.pipline：这个是专门用来保存数据的,其中有三个方法会经常使用：
+
+* open\_spider\(self,spider\)      当爬虫被打开的时候执行
+* process\_item（self,item,spider\)   当爬虫有item传过来的时候会被调用
+* close\_spider\(self,spider\)   当爬虫被关闭的时候会被调用
+
+
+
+
+
+
+
