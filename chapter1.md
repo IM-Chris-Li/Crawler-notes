@@ -49,13 +49,11 @@ class CsbkItem(scrapy.Item):
 
 5.pipline：这个是专门用来保存数据的,其中有三个方法会经常使用：
 
+需要在settings.py中，设置’ITEM\_PIPLINE‘
+
 * open\_spider\(self,spider\)      当爬虫被打开的时候执行
 * process\_item（self,item,spider\)   当爬虫有item传过来的时候会被调用
 * close\_spider\(self,spider\)   当爬虫被关闭的时候会被调用
-
-
-
-
 
 
 
