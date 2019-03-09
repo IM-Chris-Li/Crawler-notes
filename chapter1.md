@@ -25,5 +25,19 @@ scrapy genspider [爬虫名字][目标网页的域名]
 5. scrapy.py:项目的配置文件。
 6. spider包:所有的爬虫都放在里面。
 
+## 糗事百科Scrapy笔记
+
+1.response可以执行xpath语法
+
+2.提取出来的数据，是一个’Selector‘或者是一个'SelectorList'对象，获取其中字符串使用getall方法或者get方法
+
+> getall        获取Selector中的所有文本，返回的是一个列表
+>
+> get            获取Selector中的第一个文本，返回的是一个string类型
+
+3.数据传回来需要交给pipline处理，可以使用yield或者return列表。
+
+
+
 
 
