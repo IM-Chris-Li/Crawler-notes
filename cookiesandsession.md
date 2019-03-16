@@ -12,7 +12,5 @@
 
 ### 3.CSRF（Cross-site request forgery）跨站请求伪造
 
-**描述：**
-
-
+**描述：**CSRF通过伪装成受信任用户的请求来利用受信任的网站。
 
